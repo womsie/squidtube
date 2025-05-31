@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>womtube</title>
+</head>
+<body>
+<div class="main-layout">
+
+	<div class="sidebar">
+		<div><a href="../home/home.html"><img src="../home/logo.png"></a></img></div>
+		<div><a href="../home/home.html">home</a></div>
+		<div><a href="login.html">login</a></div>
+		<div><a href="../playlist/playlist.html">playlist</a></div>
+		<div><a href="../privp/priv.html">privacy policy</a></div>
+		<div><a href="../support/support.html">support</a></div>
+	</div>
+	
+	<div class="panel">
+		<h>sign in</h>
+		<div class="form">
+			<label for="email" class="email-label">email address</label>
+			<input type="email" id="mail">
+		</div>
+		
+		<div class="form">
+			<label for="pw" class="pw-label">password</label>
+			<input type="password" id="pw">
+		</div>
+		
+		<a href="login.html"><button class="login" type="submit">sign in</button></a>
+	</div>
+			
+
+
+
+
+
+
+<script>
+  const emailInput = document.getElementById('mail');
+  const emailLabel = document.querySelector('.email-label');
+
+  emailInput.addEventListener('input', () => {
+    if (emailInput.value.length > 0) {
+      emailLabel.style.display = 'none'; // hide label
+    } else {
+      emailLabel.style.display = ''; // show label again
+    }
+  });
+</script>
+
+<script>
+  const pwInput = document.getElementById('pw');
+  const pwLabel = document.querySelector('.pw-label');
+
+  pwInput.addEventListener('input', () => {
+    if (pwInput.value.length > 0) {
+      pwLabel.style.display = 'none';
+    } else {
+      pwLabel.style.display = '';
+    }
+  });
+</script>
+
+
+</body>
+</html>
