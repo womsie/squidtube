@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>womtube</title>
+</head>
+<body>
+<div class="main-layout">
+
+	<div class="sidebar">
+		<div><a href="home.html"><img src="logo.png"></a></img></div>
+		<div><a href="home.html">home</a></div>
+		<div><a href="../login/login.html">login</a></div>
+		<div><a href="../playlist/playlist.html">playlist</a></div>
+		<div><a href="../privp/priv.html">privacy policy</a></div>
+		<div><a href="../support/support.html">support</a></div>
+	</div>
+
+
+	<div class="video-container">
+		<div class="video-item">
+			<img src="emu.jpg"></img>
+			<div class="caption">The NEW Bacteria Species
+			<p id="num"></p>
+			</div>
+		</div>
+		
+		<div class="video-item">
+		  <img src="2ds_review.png"/></img>
+		  <div class="caption">
+			Why the Nintendo 2DS was a FAILURE 
+			<p id="num2"></p>
+		  </div>
+		</div>
+
+		<div class="video-item">
+		  <img src="guy_folder.png"/></img>
+		  <div class="caption">
+			Yo
+			<p>1 view</p>
+		  </div>
+		</div>
+	</div>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let x = Math.floor((Math.random() * 58438573) + 1);
+	let formattednum = x.toLocaleString(undefined);
+    document.getElementById("num").innerHTML = formattednum + " views";
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let x = Math.floor((Math.random() * 57384) + 1);
+	let formattednum = x.toLocaleString(undefined);
+    document.getElementById("num2").innerHTML = formattednum + " views";
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+	font-family: "Yusei Magic";
+	background-color:#fee7e8;
+}
+p {
+	font-size:15px;
+}
+.main-layout {
+	display: flex;
+	height:100vh
+}
+
+
+.sidebar {
+	display: flex;
+	background-color:#faaaae;
+	justify-content:left;
+	flex-direction:column;
+	height:100vh;
+	width:200px;
+	margin-right:5px;
+	z-index:1;
+	
+}
+.sidebar > div img{
+	width: 120px;
+	height: 120px;
+	object-fit: contain;
+	display:block;
+
+}
+	
+
+.sidebar > div {	/* text */
+	background-color:white;
+	margin:25px;
+	font-size:25px;
+	border: 2px solid white;
+}
+
+.sidebar > div:first-child {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sidebar >div:hover {
+	background-color:pink
+}
+
+
+.video-container { /* holds all items */
+	display:flex;
+	flex-wrap: wrap;
+	flex: 1;
+	float:left;
+	margin:5px;
+	gap:10px;
+}
+
+.video-item { /* sets overall rules for both caption and img but separates them */
+	border: 5px solid #faaaae;
+	width: 640px;
+	height:480px;
+	box-sizing:border-box;
+	display:flex;
+	flex-direction:column;
+}
+
+.video-item > img {
+	object-fit: cover;
+	width: 100%;
+	height: 400px;
+	flex-grow:1;
+}
+
+.video-item > .caption {
+	background-color: black;
+	color:white;
+	width:100%;
+	opacity: 0.8;
+	padding: 5px;
+	max-height:100px;
+	box-sizing: border-box;
+	font-size:25px;
+}
+
+/* link colours */
+/* unvisited link */
+a:link {
+  color: #ff9999;
+}
+
+/* visited link */
+a:visited {
+  color: #666699;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: #cc33ff;
+}
+
+	
