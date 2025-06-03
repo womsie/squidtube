@@ -83,7 +83,7 @@ p {
 }
 
 .video-item > .caption {
-	background-color: rgba(250, 170, 174, 0.7);
+	background-color: rgba(250, 170, 174, 1);
 	color:white;
 	width:100%;
 	padding: 5px;
