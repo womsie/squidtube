@@ -91,6 +91,7 @@ h {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 5px 10px 5px 5px;
+  	color: #faaaae
 }
 
 .list-item:hover {
