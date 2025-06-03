@@ -129,3 +129,7 @@ a:active {
     display: block;
 }
 
+#focus-title, #focus-desc {
+    color: #faaaae
+}
+
